@@ -22,6 +22,9 @@
            sync-c="true"
            sync-j="4" />
 
+ <remote  name="cr"
+           fetch="git://github.com/CarbonDev/" />
+
   <project path="build" name="ParanoidAndroid/android_build" remote="github" revision="jellybean" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -31,7 +34,7 @@
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="cts" name="platform/cts" />
-  <project path="dalvik" name="ParanoidAndroid/android_dalvik" remote="github" revision="jellybean" />
+  <project path="dalvik" name="android_dalvik" remote="cr" revision="cm-10.1-linaro" />
   <project path="development" name="platform/development" />
   <project path="device/common" name="CyanogenMod/android_device_common" remote="github" revision="cm-10.1" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
